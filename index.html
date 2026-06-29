@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电力系统继电保护复习题集（完美两页版）</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", SimSun, sans-serif;
+        }
+        body {
+            background-color: #f5f7fa;
+            padding: 20px;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 2px 14px rgba(0,0,0,0.12);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 28px;
+            font-size: 28px;
+        }
+        .btn-box {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        .download-btn {
+            padding: 13px 30px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 17px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .download-btn:hover {
+            background: #1d4ed8;
+        }
+        /* 标签切换 */
+        .tab-wrap {
+            margin-bottom: 24px;
+            border-bottom: 1px solid #ddd;
+        }
+        .tab-btn {
+            padding: 11px 24px;
+            border: none;
+            background: transparent;
+            font-size: 18px;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+        }
+        .tab-btn.active {
+            border-bottom: 3px solid #2563eb;
+            color: #2563eb;
+            font-weight: bold;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.show {
+            display: block;
+        }
+        h2 {
+            margin: 26px 0 14px;
+            color: #34495e;
+            font-size: 22px;
+            border-left: 5px solid #2563eb;
+            padding-left: 12px;
+        }
+        h3 {
+            margin: 18px 0 10px;
+            font-size: 19px;
+            color: #444;
+        }
+        p, li {
+            font-size: 16px;
+            color: #333;
+            margin: 8px 0;
+        }
+        ul, ol {
+            padding-left: 28px;
+            margin: 12px 0;
+        }
+        .judge-wrong {
+            color: #dc2626;
+            font-weight: bold;
+        }
+        .judge-right {
+            color: #16a34a;
+            font-weight: bold;
+        }
+        .answer {
+            font-weight: bold;
+            color: #2563eb;
+        }
+        .page-divide {
+            margin: 45px 0;
+            text-align: center;
+            color: #999;
+            border-top: 1px dashed #ccc;
+            padding-top: 22px;
+            font-size: 17px;
+        }
+        /* PPT图片样式 */
+        .ppt-img-box {
+            width: 100%;
+            margin: 16px 0;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        .ppt-img-box img {
+            width: 100%;
+            display: block;
+        }
+        .img-desc {
+            background: #f1f5f9;
+            padding: 8px 12px;
+            font-size: 14px;
+            color: #475569;
+        }
+        .formula {
+            font-size: 18px;
+            margin: 10px 0;
+            padding: 6px 10px;
+            background: #f8fafc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>电力系统继电保护复习题集（完美两页版）</h1>
+        <div class="btn-box">
+            <button class="download-btn" onclick="downloadDoc()">📥 下载完整Word文档（纯文本复制）</button>
+        </div>
+
+        <!-- 标签切换按钮 -->
+        <div class="tab-wrap">
+            <button class="tab-btn active" onclick="switchTab(1)">一、填空/选择/判断 习题题库</button>
+            <button class="tab-btn" onclick="switchTab(2)">二、变压器+距离保护核心考点（含PPT原理图）</button>
+        </div>
+
+        <!-- 标签1：习题题库 -->
+        <div id="tab1" class="tab-content show">
+            <h2>一、填空题</h2>
+            <ol>
+                <li>视在功率是电路的 总功率（或电压与电流有效值的乘积）。</li>
+                <li>220kV及以上电力系统微机线路保护装置部分检验时间一般为 2～3 天。</li>
+                <li>电压互感器二次侧不得 短路。</li>
+                <li>电感线圈中的 电流 不能突变。</li>
+                <li>变压器的主要发热部位是 铁芯 和绕组，导向冷却就是要加速这些部位的冷却。</li>
+                <li>变压器瓦斯保护，重瓦斯作用于 跳闸。</li>
+                <li>用于完成发电机并列操作的装置称为 自动准同期装置。</li>
+                <li>220kV及以上电力系统微机线路保护装置全部检验时间一般为 4～5 天。</li>
+                <li>衡量电能质量好坏的指标是电压、频率和 波形（或谐波畸变率）。</li>
+                <li>变压器的主要发热部位是绕组和 铁芯，导向冷却就是要加速这些部位的冷却。</li>
+                <li>中央信号是由事故信号和 预告 信号组成。</li>
+                <li>电压互感器的二次回路和三次回路必须 有一点且只能有一点可靠接地。</li>
+                <li>变压器瓦斯保护，轻瓦斯作用于 发出信号。</li>
+                <li>中央信号是由 事故 信号和预告信号组成。</li>
+                <li>继电保护现场工作时，其工作人员不得少于 2 人。</li>
+                <li>继电保护装置试验所用仪表的精度应为 0.5（或0.2） 级。</li>
+                <li>电容器上的 电压 不能突变。</li>
+            </ol>
+
+            <h2>二、单选题</h2>
+            <ol>
+                <li>快速切除线路任意一点故障的主保护是（<span class="answer">C</span>）。A.距离保护 B.零序电流保护 C.纵联保护 D.功率方向保护</li>
+                <li>主保护或断路器拒动时，用来切除故障的保护是（<span class="answer">A</span>）。A.后备保护 B.异常运行保护 C.辅助保护 D.备用保护</li>
+                <li>测量交流电流回路的绝缘电阻使用（<span class="answer">D</span>）摇表。A.2000V B.1500V C.1000V D.500V</li>
+                <li>60～110kV电压等级的设备不停电时的安全距离是（<span class="answer">B</span>）。A.2.0米 B.1.5米 C.1.0米 D.0.5米</li>
+                <li>瓦斯继电器中，轻瓦斯定值是指（<span class="answer">A</span>）。A.接点动作时的气体容积 B.油流速度 C.气流速度 D.以上都不是</li>
+                <li>电压互感器其二次值一般是（<span class="answer">B</span>）。A.50V B. 100V C. 170V D. 200V</li>
+                <li>金属导体的电阻值随温度的升高而（<span class="answer">A</span>）。A.增大 B.减小 C.不确定 D.不变</li>
+                <li>变压器励磁涌流中含有大量高次谐波，其中以（<span class="answer">A</span>）。A.二次谐波为主 B.三次谐波为主 C.五次谐波为主 D.六次谐波为主</li>
+                <li>继电保护处人员到现场进行事故调查分析工作，他可以担任的角色是（<span class="answer">C</span>）。A.工作负责人 B.工作票签发人 C. 工作班人员 D.工作许可人</li>
+                <li>（<span class="answer">D</span>）回路不属于二次回路。A.继电保护和自动装置回路 B.直流系统监察装置回路 C.发电机同期装置回路 D. 发电机励磁回路</li>
+            </ol>
+            <h3>单选题（续）</h3>
+            <ol start="11">
+                <li>电压互感器二次回路中，每相电缆上的压降不应超过额定电压的（<span class="answer">B</span>）。A.0.1 B.0.03 C.0.05 D.0.08</li>
+                <li>备用电源自投装置从接线上应保证动作（<span class="answer">A</span>）。A.一次 B.两次 C.三次 D.多次</li>
+                <li>短路电流量最大的短路为（<span class="answer">D</span>）。A.单相短路 B.两相短路 C.两相短路接地 D.三相短路</li>
+                <li>下列保护中，属于后备保护的是（<span class="answer">C</span>）。A.变压器差动保护 B.高频闭锁零序保护 C.断路器失灵保护 D.瓦斯保护</li>
+                <li>方向阻抗继电器受电网频率变化影响较大的回路是（<span class="answer">A</span>）。A.记忆回路 B.相位比较回路 C. 幅值比较回路 D. 执行元件回路</li>
+                <li>电力系统发生振荡时，（<span class="answer">D</span>）可能会发生误动。A.负序电流保护 B.零序电流速断保护 C.零序电压保护 D.电流速断保护</li>
+                <li>快速切除线路和母线的短路故障，是提高电力系统（<span class="answer">B</span>）的重要手段。A.静态稳定 B.暂态稳定 C. 动态稳定 D.小干扰稳定</li>
+                <li>避雷器与被保护设备的距离，就保护效果来说（<span class="answer">B</span>）。A.越远越好 B.越近越好 C.符合安规要求 D.距离大于1米</li>
+                <li>发电机失磁后，需从系统中吸取（<span class="answer">B</span>）功率，将造成系统电压下降。A.有功 B.无功 C.有功和无功 D.视在</li>
+                <li>二次回路电缆芯线用于保护和测量仪表中电流回路的导线截面不应小于（<span class="answer">B</span>）。A.1.5mm² B.2.5mm² C.3.5mm² D.4.5mm²</li>
+            </ol>
+
+            <h2>三、判断题</h2>
+            <ol>
+                <li>通常所说的负载大小是指负载电流的大小。 <span class="judge-right">(对)</span></li>
+                <li>一个线圈中，通以恒定电流时不产生自感电动势。 <span class="judge-right">(对)</span></li>
+                <li>零序电流的分布与电源点的分布有关，与中性点接地的多少及位置无关。[与中性点接地极度相关] <span class="judge-wrong">(错)</span></li>
+                <li>220kV线路保护宜采用远后备方式，110kV线路保护宜采用近后备方式。[220kV及以上必用近后备] <span class="judge-wrong">(错)</span></li>
+                <li>电流速断保护的保护范围，在各种运行方式下不会改变。[受最大/最小运行方式影响而变] <span class="judge-wrong">(错)</span></li>
+                <li>预告信号包括警铃和控制屏上的光字牌。[预告发蜂鸣器音响，事故发警铃] <span class="judge-wrong">(错)</span></li>
+                <li>电力变压器不管其接线方式如何，其正、负、零序阻抗均相等。[零序阻抗与接线方式极度相关] <span class="judge-wrong">(错)</span></li>
+                <li>微机保护动作后，若无打印报告则不论动作多少次只作1次统计。 <span class="judge-wrong">(错)</span></li>
+                <li>为防御变压器过励磁应装设负序过电流保护。[应装设专用的过励磁保护] <span class="judge-wrong">(错)</span></li>
+                <li>变压器内部故障系指变压器线圈内发生故障。[指油箱内部的各种故障] <span class="judge-wrong">(错)</span></li>
+                <li>保护的装置动作时间是指从保护开始动作到断路器跳开所经历的全部时间。[不含断路器分闸灭弧时间] <span class="judge-wrong">(错)</span></li>
+                <li>变压器差动保护不能代替瓦斯保护。[两者互为主保护，缺一不可] <span class="judge-right">(对)</span></li>
+                <li>交直流回路可共用一条电缆，因为交直流回路都是独立系统。[严禁共用一条电缆] <span class="judge-wrong">(错)</span></li>
+                <li>发电机启动和停机保护，在正常工频运行时应退出。 <span class="judge-right">(对)</span></li>
+                <li>一般来说，继电保护装置首先应满足快速性的要求。[首要满足可靠性] <span class="judge-wrong">(错)</span></li>
+                <li>三极管组成的放大电路,其直流负载线和交流负载线相交于静态工作点。 <span class="judge-right">(对)</span></li>
+                <li>相—地制通道，即在输电线同一相作为高频通道。 <span class="judge-right">(对)</span></li>
+            </ol>
+        </div>
+
+        <!-- 标签2：核心考点（新增三张距离保护PPT图） -->
+        <div id="tab2" class="tab-content">
+            <h1 style="font-size:24px;margin-bottom:20px">电力系统继电保护复习核心考点（第一页）</h1>
+            <h2>模块一 电力变压器继电保护</h2>
+            <h3>一、变压器故障与异常运行状态</h3>
+            <p>1. 油箱内部故障：</p>
+            <ol>
+                <li>各相绕组之间的相间短路</li>
+                <li>单相绕组线匝之间的匝间短路</li>
+                <li>绕组或引出线碰外壳单相接地故障</li>
+            </ol>
+            <p>2. 油箱外部故障：</p>
+            <ol>
+                <li>引出线相间短路</li>
+                <li>绝缘套管破损、闪络引发引出线单相接地短路</li>
+            </ol>
+            <p>3. 异常运行工况：过负荷、过电流、零序过流、油面下降、铁芯过励磁、冷却系统故障、设备温升超标</p>
+
+            <h3>二、变压器七类保护配置及作用</h3>
+            <ol>
+                <li>
+                    <strong>瓦斯保护（油浸式变压器专属内部保护）</strong>
+                    <p>防护范围：油箱内部全部短路故障、油面降低故障。</p>
+                    <p>动作逻辑：轻瓦斯动作发告警信号；重瓦斯动作直接跳闸切除变压器。</p>
+                </li>
+                <li>
+                    <strong>纵差动保护、电流速断保护（变压器主保护）</strong>
+                    <p>防护范围：绕组、引出线多相短路；大接地电流侧绕组及引线单相接地短路；绕组匝间短路。</p>
+                </li>
+                <li>
+                    <strong>相间短路后备保护（作为瓦斯、差动主保护的后备）</strong>
+                    <p>包含三类：过电流保护、复合电压起动过电流保护、负序过电流保护。</p>
+                </li>
+                <li>
+                    <strong>接地故障保护</strong>
+                    <p>适用场景：大接地电流电力系统，防御变压器外部引出线单相接地短路。</p>
+                </li>
+                <li>
+                    <strong>过负荷保护</strong>
+                    <p>功能：监测变压器三相对称过负荷，仅输出告警信号，正常不跳闸。</p>
+                </li>
+                <li>
+                    <strong>过励磁保护</strong>
+                    <p>功能：防范系统电压偏高、频率偏低造成铁芯过励磁，避免铁芯过热绝缘老化。</p>
+                </li>
+                <li>
+                    <strong>其他辅助保护</strong>
+                    <p>功能：温度保护、冷却系统故障保护，监测设备散热、温升异常。</p>
+                </li>
+            </ol>
+
+            <h3>三、变压器保护分工总结</h3>
+            <ol>
+                <li>双重主保护：瓦斯保护+纵差动保护，互补覆盖全部油箱内部故障，实现故障瞬时切除；</li>
+                <li>后备保护：应对外部短路、主保护拒动故障，作为兜底保护；</li>
+                <li>告警类保护：提前预警过载、漏油、过热、过励磁等非短路异常工况。</li>
+            </ol>
+
+            <h2>模块二 距离保护基础（配套三张原理PPT）</h2>
+            <h3>1. 阻抗继电器基础定义与测量阻抗公式</h3>
+            <div class="ppt-img-box">
+                <img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEWSttqQfhkUfYx1M9myrbbpCUpe9Z97wAC3CQAAv6GEFYkr0HP2RcyhTwE.png" alt="阻抗继电器动作特性基础图">
+                <div class="img-desc">图1：阻抗继电器核心作用与测量阻抗公式</div>
+            </div>
+            <p>阻抗继电器是距离保护装置的核心元件。</p>
+            <p>阻抗继电器的主要作用是测量短路点到保护安装地点之间的阻抗，并与整定阻抗值进行比较，以确定保护是否应该动作。</p>
+            <div class="formula">测量阻抗复数公式：$Z_m = \dfrac{\dot{U}_m}{\dot{I}_m} = R_m + jX_m$</div>
+
+            <h3>2. 正常负荷阻抗与故障短路阻抗、保护动作判据</h3>
+            <div class="ppt-img-box">
+                <img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEWStxqQfiGoAFfQYoTBNKb_P3x_vC30gAC3SQAAv6GEFaIzK_jijsdUTwE.png" alt="负荷阻抗与短路阻抗对比图">
+                <div class="img-desc">图2：正常运行/故障下测量阻抗区分与距离保护动作逻辑</div>
+            </div>
+            <p>① 正常运行工况：测量阻抗为负荷阻抗$Z_{fh}$，阻抗模值大：$Z_d=\dfrac{\dot{U}_d}{\dot{I}_d}=Z_{fh}$</p>
+            <p>② 线路短路工况：测量阻抗为短路阻抗$Z_d$，模值很小：$Z_d=\dfrac{\dot{U}_d}{\dot{I}_d}=\dfrac{\dot{U}_{残}}{\dot{I}_d}$</p>
+            <p>③ 动作判定规则：对比整定阻抗$Z_{set}$</p>
+            <ul>
+                <li>$|Z_d|>|Z_{set}|$：故障在保护范围外，保护不动作；</li>
+                <li>$|Z_d|<|Z_{set}|$：故障在保护范围内，保护跳闸。</li>
+            </ul>
+
+            <h3>3. 方向圆阻抗继电器动作特性（R-X阻抗平面图形）</h3>
+            <div class="ppt-img-box">
+                <img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEWSt5qQfilF5N3P45MqP7oE8YBxybKLAAC3yQAAv6GEFalBzDHmrfYUjwE.png" alt="方向圆阻抗特性示意图">
+                <div class="img-desc">图3：方向圆阻抗继电器复平面动作特性图</div>
+            </div>
+            <div class="formula">幅值判据：$\displaystyle \left| Z_m - \frac{1}{2}Z_{set} \right| \le \left| \frac{1}{2}Z_{set} \right|$</div>
+            <div class="formula">相位判据：$\displaystyle -90^\circ \le \arg \frac{Z_{set}-Z_m}{Z_m} \le 90^\circ$</div>
+            <p>特性说明：</p>
+            <ol>
+                <li>在R-jX阻抗复平面内，圆心为$\frac{1}{2}Z_{set}$，圆半径为$\frac{1}{2}|Z_{set}|$，圆形经过坐标原点；</li>
+                <li>仅响应线路正方向故障，反向故障测量阻抗落在圆外，天然具备方向判别能力；</li>
+                <li>测量阻抗矢量$Z_m$端点落在圆形内部时，阻抗继电器动作。</li>
+            </ol>
+
+            <div class="page-divide">——————分页（第二页）——————</div>
+            <h2>距离保护高频简答背诵</h2>
+            <ol>
+                <li><strong>瓦斯保护优缺点</strong>
+                    <p>优点：可反应轻微匝间短路、油箱漏油；差动无法检测轻微匝间故障；</p>
+                    <p>缺点：仅油浸变可用，不能保护外部套管、引线故障。</p>
+                </li>
+                <li><strong>变压器双重主保护含义</strong>
+                    <p>瓦斯保护负责油箱内部故障，差动保护覆盖绕组引线短路，两套互补，完整切除内部故障。</p>
+                </li>
+                <li><strong>距离保护对比电流保护优势</strong>
+                    <p>保护范围不受系统运行方式、短路电流影响，保护长度稳定，高压线路主流保护。</p>
+                </li>
+                <li><strong>方向圆阻抗继电器具备方向性原因</strong>
+                    <p>动作圆仅在阻抗平面正方向，反向故障测量阻抗在圆外，不会误动。</p>
+                </li>
+                <li><strong>过负荷保护只告警不跳闸</strong>
+                    <p>过负荷属于异常工况，非短路故障，短时过载不会损坏设备，仅需提醒减负荷。</p>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        // 标签切换逻辑
+        function switchTab(num) {
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabBtns.forEach(btn => btn.classList.remove('active'));
+            tabContents.forEach(content => content.classList.remove('show'));
+            event.target.classList.add('active');
+            document.getElementById(`tab${num}`).classList.add('show');
+        }
+
+        // 下载Word纯文本功能
+        function downloadDoc() {
+            let allText = `电力系统继电保护复习题集（完美两页版）
+=====================================
+【第一部分：填空、单选、判断题库】
+一、填空题
+1. 视在功率是电路的 总功率（或电压与电流有效值的乘积）。
+2. 220kV及以上电力系统微机线路保护装置部分检验时间一般为 2～3 天。
+3. 电压互感器二次侧不得 短路。
+4. 电感线圈中的 电流 不能突变。
+5. 变压器的主要发热部位是 铁芯 和绕组，导向冷却就是要加速这些部位的冷却。
+6. 变压器瓦斯保护，重瓦斯作用于 跳闸。
+7. 用于完成发电机并列操作的装置称为 自动准同期装置。
+8. 220kV及以上电力系统微机线路保护装置全部检验时间一般为 4～5 天。
+9. 衡量电能质量好坏的指标是电压、频率和 波形（或谐波畸变率）。
+10. 变压器的主要发热部位是绕组和 铁芯，导向冷却就是要加速这些部位的冷却。
+11. 中央信号是由事故信号和 预告 信号组成。
+12. 电压互感器的二次回路和三次回路必须 有一点且只能有一点可靠接地。
+13. 变压器瓦斯保护，轻瓦斯作用于 发出信号。
+14. 中央信号是由 事故 信号和预告信号组成。
+15. 继电保护现场工作时，其工作人员不得少于 2 人。
+16. 继电保护装置试验所用仪表的精度应为 0.5（或0.2） 级。
+17. 电容器上的 电压 不能突变。
+
+二、单选题
+1. 快速切除线路任意一点故障的主保护是（C）。A.距离保护 B.零序电流保护 C.纵联保护 D.功率方向保护
+2. 主保护或断路器拒动时，用来切除故障的保护是（A）。A.后备保护 B.异常运行保护 C.辅助保护 D.备用保护
+3. 测量交流电流回路的绝缘电阻使用（D）摇表。A.2000V B.1500V C.1000V D.500V
+4. 60～110kV电压等级的设备不停电时的安全距离是（B）。A.2.0米 B.1.5米 C.1.0米 D.0.5米
+5. 瓦斯继电器中，轻瓦斯定值是指（A）。A.接点动作时的气体容积 B.油流速度 C.气流速度 D.以上都不是
+6. 电压互感器其二次值一般是（B）。A.50V B. 100V C. 170V D. 200V
+7. 金属导体的电阻值随温度的升高而（A）。A.增大 B.减小 C.不确定 D.不变
+8. 变压器励磁涌流中含有大量高次谐波，其中以（A）。A.二次谐波为主 B.三次谐波为主 C.五次谐波为主 D.六次谐波为主
+9. 继电保护处人员到现场进行事故调查分析工作，他可以担任的角色是（C）。A.工作负责人 B.工作票签发人 C. 工作班人员 D.工作许可人
+10. （D）回路不属于二次回路。A.继电保护和自动装置回路 B.直流系统监察装置回路 C.发电机同期装置回路 D. 发电机励磁回路
+11. 电压互感器二次回路中，每相电缆上的压降不应超过额定电压的（B）。A.0.1 B.0.03 C.0.05 D.0.08
+12. 备用电源自投装置从接线上应保证动作（A）。A.一次 B.两次 C.三次 D.多次
+13. 短路电流量最大的短路为（D）。A.单相短路 B.两相短路 C.两相短路接地 D.三相短路
+14. 下列保护中，属于后备保护的是（C）。A.变压器差动保护 B.高频闭锁零序保护 C.断路器失灵保护 D.瓦斯保护
+15. 方向阻抗继电器受电网频率变化影响较大的回路是（A）。A.记忆回路 B.相位比较回路 C. 幅值比较回路 D. 执行元件回路
+16. 电力系统发生振荡时，（D）可能会发生误动。A.负序电流保护 B.零序电流速断保护 C.零序电压保护 D.电流速断保护
+17. 快速切除线路和母线的短路故障，是提高电力系统（B）的重要手段。A.静态稳定 B.暂态稳定 C. 动态稳定 D.小干扰稳定
+18. 避雷器与被保护设备的距离，就保护效果来说（B）。A.越远越好 B.越近越好 C.符合安规要求 D.距离大于1米
+19. 发电机失磁后，需从系统中吸取（B）功率，将造成系统电压下降。A.有功 B.无功 C.有功和无功 D.视在
+20. 二次回路电缆芯线用于保护和测量仪表中电流回路的导线截面不应小于（B）。A.1.5mm² B.2.5mm² C.3.5mm² D.4.5mm²
+
+三、判断题
+1. 通常所说的负载大小是指负载电流的大小。 (对)
+2. 一个线圈中，通以恒定电流时不产生自感电动势。 (对)
+3. 零序电流的分布与电源点的分布有关，与中性点接地的多少及位置无关。[与中性点接地极度相关] (错)
+4. 220kV线路保护宜采用远后备方式，110kV线路保护宜采用近后备方式。[220kV及以上必用近后备] (错)
+5. 电流速断保护的保护范围，在各种运行方式下不会改变。[受最大/最小运行方式影响而变] (错)
+6. 预告信号包括警铃和控制屏上的光字牌。[预告发蜂鸣器音响，事故发警铃] (错)
+7. 电力变压器不管其接线方式如何，其正、负、零序阻抗均相等。[零序阻抗与接线方式极度相关] (错)
+8. 微机保护动作后，若无打印报告则不论动作多少次只作1次统计。 (错)
+9. 为防御变压器过励磁应装设负序过电流保护。[应装设专用的过励磁保护] (错)
+10. 变压器内部故障系指变压器线圈内发生故障。[指油箱内部的各种故障] (错)
+11. 保护的装置动作时间是指从保护开始动作到断路器跳开所经历的全部时间。[不含断路器分闸灭弧时间] (错)
+12. 变压器差动保护不能代替瓦斯保护。[两者互为主保护，缺一不可] (对)
+13. 交直流回路可共用一条电缆，因为交直流回路都是独立系统。[严禁共用一条电缆] (错)
+14. 发电机启动和停机保护，在正常工频运行时应退出。 (对)
+15. 一般来说，继电保护装置首先应满足快速性的要求。[首要满足可靠性] (错)
+16. 三极管组成的放大电路,其直流负载线和交流负载线相交于静态工作点。 (对)
+17. 相—地制通道，即在输电线同一相作为高频通道。 (对)
+
+=====================================
+【第二部分：变压器+距离保护核心考点（含三张PPT原理图说明）】
+电力系统继电保护复习核心考点（第一页）
+模块一 电力变压器继电保护
+一、变压器故障与异常运行状态
+1. 油箱内部故障：
+（1）各相绕组之间的相间短路
+（2）单相绕组线匝之间的匝间短路
+（3）绕组或引出线碰外壳单相接地故障
+2. 油箱外部故障：
+（1）引出线相间短路
+（2）绝缘套管破损、闪络引发引出线单相接地短路
+3. 异常运行工况：过负荷、过电流、零序过流、油面下降、铁芯过励磁、冷却系统故障、设备温升超标
+
+二、变压器七类保护配置及作用
+1. 瓦斯保护（油浸式变压器专属内部保护）
+防护范围：油箱内部全部短路故障、油面降低故障。
+动作逻辑：轻瓦斯动作发告警信号；重瓦斯动作直接跳闸切除变压器。
+2. 纵差动保护、电流速断保护（变压器主保护）
+防护范围：绕组、引出线多相短路；大接地电流侧绕组及引线单相接地短路；绕组匝间短路。
+3. 相间短路后备保护（作为瓦斯、差动主保护的后备）
+包含三类：过电流保护、复合电压起动过电流保护、负序过电流保护。
+4. 接地故障保护
+适用场景：大接地电流电力系统，防御变压器外部引出线单相接地短路。
+5. 过负荷保护
+功能：监测变压器三相对称过负荷，仅输出告警信号，正常不跳闸。
+6. 过励磁保护
+功能：防范系统电压偏高、频率偏低造成铁芯过励磁，避免铁芯过热绝缘老化。
+7. 其他辅助保护
+功能：温度保护、冷却系统故障保护，监测设备散热、温升异常。
+
+三、变压器保护分工总结
+1. 双重主保护：瓦斯保护+纵差动保护，互补覆盖全部油箱内部故障，实现故障瞬时切除；
+2. 后备保护：应对外部短路、主保护拒动故障，作为兜底保护；
+3. 告警类保护：提前预警过载、漏油、过热、过励磁等非短路异常工况。
+
+模块二 距离保护基础（配套三张原理PPT）
+1. 阻抗继电器基础定义与测量阻抗公式
+阻抗继电器是距离保护装置的核心元件。
+阻抗继电器的主要作用是测量短路点到保护安装地点之间的阻抗，并与整定阻抗值进行比较，以确定保护是否应该动作。
+测量阻抗复数公式：Zm = Um / Im = Rm + jXm
+
+2. 正常负荷阻抗与故障短路阻抗、保护动作判据
+① 正常运行工况：测量阻抗为负荷阻抗Zfh，阻抗模值大：Zd=Ud/Id=Zfh
+② 线路短路工况：测量阻抗为短路阻抗Zd，模值很小：Zd=Ud/Id=U残/Id
+③ 动作判定规则：对比整定阻抗Zset
+- |Zd|>|Zset|：故障在保护范围外，保护不动作；
+- |Zd|<|Zset|：故障在保护范围内，保护跳闸。
+
+3. 方向圆阻抗继电器动作特性（R-X阻抗平面图形）
+幅值判据：| Zm - 1/2Zset | ≤ | 1/2Zset |
+相位判据：-90° ≤ arg[(Zset-Zm)/Zm] ≤ 90°
+特性说明：
+1. 在R-jX阻抗复平面内，圆心为1/2Zset，圆半径为1/2|Zset|，圆形经过坐标原点；
+2. 仅响应线路正方向故障，反向故障测量阻抗落在圆外，天然具备方向判别能力；
+3. 测量阻抗矢量Zm端点落在圆形内部时，阻抗继电器动作。
+
+——————分页（第二页）——————
+距离保护高频简答背诵
+1. 瓦斯保护优缺点
+优点：可反应轻微匝间短路、油箱漏油；差动无法检测轻微匝间故障；
+缺点：仅油浸变可用，不能保护外部套管、引线故障。
+2. 变压器双重主保护含义
+瓦斯保护负责油箱内部故障，差动保护覆盖绕组引线短路，两套互补，完整切除内部故障。
+3. 距离保护对比电流保护优势
+保护范围不受系统运行方式、短路电流影响，保护长度稳定，高压线路主流保护。
+4. 方向圆阻抗继电器具备方向性原因
+动作圆仅在阻抗平面正方向，反向故障测量阻抗在圆外，不会误动。
+5. 过负荷保护只告警不跳闸
+过负荷属于异常工况，非短路故障，短时过载不会损坏设备，仅需提醒减负荷。
+`;
+            // 打开新窗口复制全文
+            const win = window.open("", "_blank", "width=1100,height=720");
+            win.document.write(`
+                <html>
+                    <head>
+                        <meta charset="UTF-8">
+                        <title>Word文档纯文本复制</title>
+                        <style>textarea{width:95%;height:500px;padding:10px;font-size:15px;}</style>
+                    </head>
+                    <body style="padding:20px;">
+                        <h3>操作步骤：Ctrl+A全选 → Ctrl+C复制 → 打开Word粘贴保存</h3>
+                        <textarea>${allText}</textarea>
+                    </body>
+                </html>
+            `);
+            win.document.querySelector("textarea").select();
+        }
+    </script>
+</body>
+</html>
